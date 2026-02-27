@@ -13,7 +13,7 @@ class BasePage:
     def open_url(self,url):
         self.driver.get(url)
     def find(self,location):
-        return self.driver.find_element(*location)
+        return self.wait.until(EC.visibility_of_element_located(location))
     def click(self,location):
         self.wait_clickable(location)
         element = self.find(location)
