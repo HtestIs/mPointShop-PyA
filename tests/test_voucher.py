@@ -17,4 +17,4 @@ def login_page(driver):
     # print(login_page.current_url())
 def test_fill_form(login_page):
     login_page.fill_form("name","title","hashtag","12","50000","180","10/05/2026","prefix","location","information")
-    
+    sleep(5)
