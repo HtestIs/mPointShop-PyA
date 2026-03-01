@@ -13,7 +13,7 @@ test_filter = TestNameFilter()
 def setup_logger():
     logging.basicConfig(
         level=logging.INFO,
-        format="%(asctime)s | %(levelname)s | %(test_name)s | %(name)s | %(message)s",
+        format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
         handlers=[
             logging.FileHandler("automation.log", mode="w", encoding="utf-8"),
             logging.StreamHandler()
