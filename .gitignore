@@ -11,7 +11,8 @@ __pycache__/
 .pytest_cache/
 
 # Screenshots
-screenshots/
+screenshots/*
+!screenshots/.gitkeep
 
 # Logs
 *.log
